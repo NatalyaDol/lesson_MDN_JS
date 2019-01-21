@@ -35,3 +35,26 @@ myImage.onclick = function() {
 
 let myButton = document.querySelector('button');
 let myHeading = document.querySelector('h1');
+
+
+//Теперь добавьте следующую функцию для установки персонализированного приветствия
+// - она ничего не будет делать, но мы будем использовать её позже:
+// она функция содержит prompt диалоговое окно
+//ПОЯСНЕНИЕ ПО ССЫЛКЕ
+//https://developer.mozilla.org/ru/docs/Learn/Getting_started_with_the_web/JavaScript_basics
+function setUserName () {
+    var myName = prompt('Please enter your name. ');
+    localStorage.setItem('name', myName);
+    myHeading.innerHTML = 'Mozilla is cool, ' + myName;
+}
+
+if(!localStorage.getItem('name')) {
+    setUserName();
+  } else {
+    var storedName = localStorage.getItem('name');
+    myHeading.innerHTML  = 'Mozilla is cool, ' + storedName;
+}
+
+myButton.onclick = function() {
+    setUserName();
+}
