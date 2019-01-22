@@ -1,3 +1,4 @@
+
 function getChecked() {
     var checkbox = document.getElementById('one');
 

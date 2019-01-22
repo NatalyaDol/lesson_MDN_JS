@@ -7,6 +7,7 @@
     <link href="styles/style.css" rel="stylesheet" type="text/css">
   </head>
   <body>
+    <!--  main.js Приветствие, смена картинки по клику, сохранение имени юзера -->
     <h1>Mozilla is cool</h1>
     <img src="images/firefox-icon.png" alt="The Firefox logo: a flaming fox surrounding the Earth.">
 
@@ -22,10 +23,18 @@
 
     <p>Read the <a href="https://www.mozilla.org/en-US/about/manifesto/">Mozilla Manifesto</a> to learn even more about the values and principles that guide the pursuit of our mission.</p>
     <button>Change user </button>
-    
+    <!-- checkbox.js -->
     <label> <input type="checkbox" id="one" onchange="getChecked()" Пример Чекбокс> </label>
+    <br>
+    <!-- input_type_radio.js-->
+    <input type="radio" name="about_user" value="male"> male
+    <input type="radio" name="about_user" value="female"> female
+    <input type="radio" name="about_user" value="child"> child
+    <button id="btn_input">Проверяем что выбрано</button>
 
+    <!--  -->
     <script src="scripts/main.js"></script>
     <script src="scripts/checkbox.js"></script>
+    <script src="scripts/input_type_radio"></script>
   </body>
 </html>
