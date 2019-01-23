@@ -22,6 +22,8 @@
     <p>working together to keep the Internet alive and accessible, so people worldwide can be informed contributors and creators of the Web. We believe this act of human collaboration across an open platform is essential to individual growth and our collective future.</p>
 
     <p>Read the <a href="https://www.mozilla.org/en-US/about/manifesto/">Mozilla Manifesto</a> to learn even more about the values and principles that guide the pursuit of our mission.</p>
+    
+    <h3>Смени юзера</h3>
     <button>Change user </button>
     <br>
     <!-- checkbox.js -->
@@ -52,13 +54,34 @@
 
     <!-- ползунок со значением input_type_range -->
     <h3>ползунок со значением input_type_range</h3>
-    <input type="range" min="0" max="100" step="5" id="inp_type_range">
+    <input type="range" min="0" max="100" value="0" step="5" id="inp_type_range">
     <p id="inp_type_range_valuy_p"></p>
 
-    <!-- Создаем CSS Генератор -->
-    <h3>Создаем CSS Генератор</h3>
+    <!-- Создаем CSS Генератор generation_for_css.js -->
+    <h3>Создаем CSS Генератор скругление углов</h3>
+    <div class="block_generation">
+      <p>Верхний левый угол:
+        <input type="range" class="inp_generation_css" id="rtl" min="0" max="100" value="0" oninput="valueInpTypeRange()">
+        <input type="text" id="ttl" value="0">
+      </p>
+      <p>Верхний правый угол:
+        <input type="range" class="inp_generation_css" id="rtr" min="0" max="100" value="0" oninput="valueInpTypeRange()">
+        <input type="text" id="ttr" value="0">
+      </p>
+      <p>Нижний правый угол:
+        <input type="range" class="inp_generation_css" id="rbr" min="0" max="100" value="0" oninput="valueInpTypeRange()">
+        <input type="text" id="tbr" value="0">
+      </p>
+      <p>Нижний левый угол:
+        <input type="range" class="inp_generation_css" id="rbl" min="0" max="100" value="0" oninput="valueInpTypeRange()">
+        <input type="text" id="tbl" value="0">
+      </p>
+      <div id="block_example"></div>
 
-    <h3>создаем CSS генератор </h3>
+    </div>
+    
+
+    
     
     
 
@@ -69,5 +92,6 @@
     <script src="scripts/input_type_radio.js"></script>
     <script src="scripts/selector_option_fruits.js"></script>
     <script src="scripts/input_type_range.js"></script>
+    <script src="scripts/generation_for_css.js"></script>
   </body>
 </html>
