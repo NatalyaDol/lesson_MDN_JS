@@ -8,7 +8,7 @@ function changeInpType() {
 }
 
 
-
+//Навешиваем событие
 var btnForInp = document.getElementById('btn_input');
 btn_input.addEventListener('click', changeInpType);
 
