@@ -8,4 +8,68 @@ h3 {
   height: 100px;
   background: green;
 }
+
+nav {
+  margin-top: 33px;
+}
+
+nav .menu_item {
+  border: 2px solid green;
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  width: 12rem;
+}
+
+nav .menu_item .submenu {
+  display: block;
+  height: 3rem;
+  width: 12rem;
+  background: yellow;
+  position: absolute;
+  cursor: pointer;
+}
+
+.tabs-wrapper {
+  position: relative;
+  width: 800px;
+  margin: 0 auto;
+}
+
+.tabs-wrapper .tabs-titles-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.tabs-wrapper .tabs-titles-wrap .tab {
+  width: 100px;
+  height: 60px;
+  background: #ccc;
+  color: #222222;
+  text-align: center;
+  line-height: 60px;
+  font-family: Arial;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.tabs-wrapper .tabs-titles-wrap .tab.active {
+  background: #222;
+  color: #ccc;
+  cursor: default;
+}
+
+.tab-content {
+  padding: 30px 20px;
+  border: 1px solid #222222;
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
+}
 /*# sourceMappingURL=style.css.map */

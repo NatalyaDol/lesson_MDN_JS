@@ -8,3 +8,70 @@ h3 {
     height: 100px;
     background: green;
 }
+
+nav {
+    margin-top: 33px;
+    .menu_item {
+        border: 2px solid green;
+        display: inline-block;
+        position: relative;
+        cursor: pointer;
+        width: 12rem;
+
+        .submenu {
+            display: block;
+            height: 3rem;
+            width: 12rem;
+            background: yellow;
+            position: absolute;
+            cursor: pointer;
+
+        }
+    }
+}
+
+
+.tabs-wrapper{
+	position: relative;
+	width: 800px;
+    margin: 0 auto;
+    
+    .tabs-titles-wrap{
+        display: flex;
+        justify-content: flex-start;
+
+        .tab{
+            width: 100px;
+            height: 60px;
+            background: #ccc;
+            color: #222222;
+            text-align: center;
+            line-height: 60px;
+            font-family:Arial;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        .tab.active{
+            background: #222;
+            color: #ccc;
+            cursor: default;
+        }
+    }
+}
+
+
+
+.tab-content{
+	padding:30px 20px;
+	border:1px solid #222222;
+	display: none;
+}
+.tab-content.active{
+	display: block;
+}
+
+
+
+
+
