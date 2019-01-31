@@ -13,6 +13,7 @@
     <img src="images/firefox-icon.png" alt="The Firefox logo: a flaming fox surrounding the Earth.">
 
     <p>At Mozilla, we’re a global community of</p>
+    <hr>
     
     <ul> <!-- changed to list in the tutorial -->
       <li>technologists</li>
@@ -27,13 +28,14 @@
     <h3>Смени юзера</h3>
     <button>Change user </button>
     <br>
+    <hr>
     <!-- checkbox.js -->
 
     <h3>checkbox </h3>
     <label> <input type="checkbox" id="one" onchange="getChecked()"> Пример Чекбокс </label>
     <br>
 
-
+    <hr>
     <!-- input_type_radio.js-->
     <h3>input_type_radio</h3>
     <input type="radio" name="about_user" value="male"> male
@@ -41,7 +43,7 @@
     <input type="radio" name="about_user" value="child"> child
     <button id="btn_input">Проверяем что выбрано</button>
     <br>
-
+    <hr>
     <!-- Выпадающий список selector_option_fruits.js -->
     <h3>Выпадающий список selector_option_fruits</h3>
 
@@ -52,7 +54,7 @@
       <option value="">Banana</option>
     </select>
     <br>
-
+    <hr>
     <!-- ползунок со значением input_type_range -->
     <h3>ползунок со значением input_type_range</h3>
     <input type="range" min="0" max="100" value="0" step="5" id="inp_type_range">
@@ -82,7 +84,7 @@
     </div>
 
     <br>
-
+    <hr>
     <!-- Tабы -->
     <h3>Tab</h3>
     <div class="tabs-wrapper">
@@ -104,6 +106,7 @@
       </div>
     </div>
     <br>
+    <hr>
   <!-- Модальные окна modal_window.js -->
   <h3>Модальные окна modal_window.js</h3>
   <button id="btn_modal_window">Open Modal</button>
@@ -136,17 +139,20 @@
     </div> -->
   
     <br>
+    <hr>
     <!-- Нажми, чтобы спрятать текст -->
     <h3>Нажми, чтобы спрятать текст</h3>
     <input type="button" id="hider" value="Нажмите, чтобы спрятать текст" />
     <div id="text">Текст</div>
     <br>
+    <hr>
     <!-- Нажми, чтобы Меня спрятать текст -->
     <h3>Нажми, чтобы меня спрятать текст</h3>
     <input type="button" onclick="this.style.display='none'" value="Нажми, чтобы меня спрятать" />
 
     <br>
-    <!-- Раскрывающееся меню menu_open_down -->
+    <hr>
+    <!-- Раскрывающееся меню menu_open_down.js + '_menu_open_down.css' -->
     <h3>Раскрывающееся меню menu_open_down</h3>
     <div id="sweeties" class="menu">
       <span class="title">Сладости (нажми меня)!</span>
@@ -155,6 +161,29 @@
         <li>Пончик</li>
         <li>Пирожное</li>
       </ul>
+    </div>
+    <br>
+    <hr>
+    <!-- Прячем сообщение close_window_x_ -->
+    <h3>Прячем сообщение (модальное окно) close_window_x_</h3>
+    <div id="messages-container">
+      <div class="pane">
+        <h3>Лошадь</h3>
+        <p>Домашняя лошадь — животное семейства непарнокопытных, одомашненный и единственный сохранившийся подвид дикой лошади, вымершей в дикой природе, за исключением небольшой популяции лошади Пржевальского.</p>
+        <button class="remove-button">[x]</button>
+      </div>
+      <div class="pane">
+        <h3>Осёл</h3>
+        <p>Домашний осёл или ишак — одомашненный подвид дикого осла, сыгравший важную историческую роль в развитии хозяйства и культуры человека. Все одомашненные ослы относятся к африканским ослам.</p>
+        <button class="remove-button">[x]</button>
+      </div>
+      <div class="pane">
+        <h3>Корова, а также пара слов о диком быке, о волах и о тёлках. </h3>
+        <p>Коро́ва — самка домашнего быка, одомашненного подвида дикого быка, парнокопытного жвачного животного семейства полорогих. Самцы вида называются быками, молодняк — телятами, кастрированные самцы — волами. Молодых (до первой стельности) самок называют
+          тёлками.
+        </p>
+        <button class="remove-button">[x]</button>
+      </div>
     </div>
 
   </div>
@@ -171,6 +200,7 @@
     <script src="scripts/modal_window.js"></script>
     <script src="scripts/put_close_text.js"></script>
     <script src="scripts/menu_open_down.js"></script>
+    <script src="scripts/close_window_x_.js"></script>
 
   </body>
 </html>

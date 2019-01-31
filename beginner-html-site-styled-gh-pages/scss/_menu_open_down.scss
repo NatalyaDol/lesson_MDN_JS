@@ -3,17 +3,17 @@
     list-style: none;
     padding-left: 20px;
     display: none;
-  }
+}
   
-  .menu .title::before {
+.menu .title::before {
     content: '▶ ';
     font-size: 80%;
     color: green;
 }
 .menu.open .title::before {
     content: '▼ ';
-  }
+}
   
-  .menu.open ul {
+.menu.open ul {
     display: block;
-  }
+}
